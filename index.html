@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <title>AREMA - Ремонт квартир в Москве</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Базовая сброска стилей для body — контекст для абсолютного позиционирования */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Formular', 'Avenir Next W1G', 'Roboto', sans-serif;
+      background: white;
+      overflow-x: auto;
+      min-width: 1920px;
+    }
+    * {
+      box-sizing: border-box;
+    }
+    /* Утилита для плейсхолдеров изображений (можно убрать при замене на реальные ссылки) */
+    img {
+      object-fit: cover;
+    }
+  </style>
+</head>
+<body>
+  <div class="main-container">
+    <div class="footer"></div>
+    <div class="footer-copyright">© AREMA профессиональный ремонт квартир в Москве и МО. ИНН 7716912681 ОГРН 1187746496233</div>
+    <div class="footer-policy">Политика конфиденциальности</div>
+    <div class="section-white-bg"></div>
+    <img class="bg-image-1" src="background.jpg" alt="bg">
+    <div class="overlay-gradient"></div>
+    <div class="contact-card-white"></div>
+    <div class="contact-address-text">Москва, Проспект мира, дом 101с1<br/>(5 минут от метро Алексеевская)
+  Ежедневно с 9:00 до 21:00</div>
+    <div class="contact-address-label">Адрес главного офиса:</div>
+    <div class="contact-phone-value">+7 (499) 521-42-49</div>
+    <div class="contact-phone-label">Контактный телефон:</div>
+    <div class="contact-email-text">Гарантийное обслуживание <span class="email-link">support@arema-group.ru</span><br/>Любые другие вопросы<br/><span class="email-link">info@arema-group.ru</span></div>
+    <div class="contact-email-label">Почта:</div>
+    <div class="contact-social-label">Наши социальные сети:</div>
+    <div class="section-title-we-are-online">Мы всегда на связи</div>
+    <div class="social-icon-bg-1"></div>
+    <div class="social-icon-inner-1"></div>
+    <div class="social-icon-bg-2"></div>
+    <div class="social-icon-bg-3"></div>
+    <div class="social-icon-wrapper-4"></div>
+    <div class="social-icon-wrapper-5"></div>
+    <div class="contact-map-placeholder"></div>
+    <img class="contact-map-img" src="map.jpg" alt="map">
+    <div class="faq-item-1"></div>
+    <div class="faq-question-1">Как узнать цену ремонта по телефону?</div>
+    <div class="faq-icon-1"></div>
+    <div class="faq-item-2"></div>
+    <div class="faq-question-2">Может ли цена измениться в процессе ремонта?</div>
+    <div class="faq-icon-2"></div>
+    <div class="faq-answer-2">Нет. Так называемые скрытые платежи — это обман. Более того, после того как мы составили смету, то фиксируем сумму на 60 дней. Изменения возможны только в случае вашего желания произвести дополнительные работы или использовать другие материалы.</div>
+    <div class="faq-item-3"></div>
+    <div class="faq-question-3">Кто и как мне гарантирует качество?</div>
+    <div class="faq-icon-3"></div>
+    <div class="faq-item-4"></div>
+    <div class="faq-question-4">Я могу заплатить в конце всей работы?</div>
+    <div class="faq-icon-4"></div>
+    <div class="faq-item-5"></div>
+    <div class="faq-question-5">Кто вывозит мусор и наводит порядок?</div>
+    <div class="faq-icon-5"></div>
+    <div class="faq-item-6"></div>
+    <div class="faq-question-6">Кто будет решать вопросы с соседями?</div>
+    <div class="faq-icon-6"></div>
+    <div class="faq-item-7"></div>
+    <div class="faq-question-7">Как закупаются строительные материалы?</div>
+    <div class="faq-icon-7"></div>
+    <div class="faq-item-8"></div>
+    <div class="faq-question-8">Какова вероятность, что ремонт затянется?</div>
+    <div class="faq-icon-8"></div>
+    <div class="faq-item-9"></div>
+    <div class="faq-question-9">Как можно следить за ходом работ и кто их проверяет?</div>
+    <div class="faq-icon-9"></div>
+    <div class="faq-title">Отвечают специалисты</div>
+    <div class="faq-subtitle">Не пропустите свой вопрос</div>
+    <div class="consultation-bg"></div>
+    <div class="consultation-card"></div>
+    <div class="consultation-title">Бесплатная консультация<br/>по вопросам ремонта</div>
+    <div class="consult-label-phone">Контактный телефон</div>
+    <div class="consult-input-phone"></div>
+    <div class="consult-placeholder-phone">+7 (___) ___ - __ - __</div>
+    <div class="consult-label-name">Ваше имя</div>
+    <div class="consult-input-name"></div>
+    <div class="consult-placeholder-name">Имя</div>
+    <div class="consult-btn-bg"></div>
+    <div class="consult-btn-text">Записаться</div>
+    <div class="consult-agreement">Согласен с <span class="policy-link">политикой конфиденциальности</span></div>
+    <div class="consult-checkbox"></div>
+    <div class="consult-checkmark"></div>
+    <div class="consult-bullet-1">Смета без скрытых платежей, считаем без ухищрений и только то, что нужно Вам</div>
+    <div class="consult-bullet-2">Индивидуальная консультация <br/>от инженера и дизайнера <br/>на личной встрече</div>
+    <div class="consult-bullet-3">Работаем без выходных, <br/>приедем тогда, когда <br/>удобно Вам</div>
+    <div class="consult-photo-place"></div>
+    <img class="consult-photo-img" src="worker.jpg" alt="consultant">
+    <div class="icon-list-1"></div>
+    <div class="icon-list-2"></div>
+    <div class="icon-list-3"></div>
+    <div class="wholesale-title">Оптовые цены <br/>от лучших производителей</div>
+    <div class="wholesale-item-1">Строительные материалы, гипсокартон, штукатурка</div>
+    <div class="wholesale-item-2">Паркетная доска, деревянный пол, напольные покрытия</div>
+    <div class="wholesale-item-3">Двери, фурнитура</div>
+    <div class="wholesale-item-4">Керамические изделия <br/>и сантехническое оборудование</div>
+    <div class="wholesale-item-5">Керамические изделия <br/>и оборудование</div>
+    <div class="wholesale-item-6">Строительные материалы, мебель, напольные покрытия</div>
+    <div class="wholesale-item-7">Линолеум, ламинат, <br/>паркетная доска </div>
+    <div class="wholesale-item-8">Плитка, линолеум, ламинат, паркетная доска </div>
+    <img class="brand-img-1" src="knauf.png" alt="brand">
+    <img class="brand-img-2" src="barlineck.jpg" alt="brand">
+    <img class="brand-img-3" src="eger.png" alt="brand">
+    <img class="brand-img-4" src="kronotex.jpg" alt="brand">
+    <img class="brand-img-5" src="itolon.jpg" alt="brand">
+    <img class="brand-img-6" src="kerama.jpg" alt="brand">
+    <img class="brand-img-7" src="komp.png " alt="brand">
+    <img class="brand-img-8" src="tarkett.jpg" alt="brand">
+    <div class="dark-section-bg"></div>
+    <img class="bg-bridge-img" src="fon.jpg" alt="bg">
+    <div class="dark-overlay"></div>
+    <div class="turnkey-title">Мы делаем настоящий ремонт <br/>под ключ, что это значит?</div>
+    <div class="card-skeleton-2"></div>
+    <img class="card-img-2" src="pol.jpg" alt="material">
+    <div class="card-skeleton-3"></div>
+    <img class="card-img-3" src="okno.jpg" alt="material">
+    <div class="card-skeleton-4"></div>
+    <img class="card-img-4" src="doors.jpg" alt="material">
+    <div class="card-description-1"></div>
+    <div class="card-title-1">Двери</div>
+    <div class="discount-badge-1"></div>
+    <div class="discount-badge-1-inner"></div>
+    <div class="discount-text-1">13%</div>
+    <div class="card-description-2"></div>
+    <div class="card-title-2">Напольные покрытия</div>
+    <div class="discount-badge-2"></div>
+    <div class="discount-badge-2-inner"></div>
+    <div class="discount-text-2">8%</div>
+    <div class="discount-badge-3"></div>
+    <div class="discount-text-3">11%</div>
+    <div class="card-description-3"></div>
+    <div class="card-title-3">Пластиковые окна</div>
+    <div class="calc-link-1">Рассчитать со скидкой</div>
+    <div class="arrow-icon-1"></div>
+    <div class="calc-link-2">Рассчитать со скидкой</div>
+    <div class="arrow-icon-2"></div>
+    <div class="calc-link-3">Рассчитать со скидкой</div>
+    <div class="arrow-icon-3"></div>
+    <div class="card-skeleton-5"></div>
+    <img class="card-img-5" src="vanna.jpg" alt="material">
+    <div class="card-skeleton-6"></div>
+    <img class="card-img-6" src="materials.jpg" alt="material">
+    <div class="card-skeleton-7"></div>
+    <img class="card-img-7" src="pol.jpg" alt="material">
+    <div class="card-description-4"></div>
+    <div class="card-title-4">Чистовые материалы</div>
+    <div class="discount-badge-4"></div>
+    <div class="discount-text-4">13%</div>
+    <div class="card-description-5"></div>
+    <div class="card-title-5">Сантехника</div>
+    <div class="discount-badge-5"></div>
+    <div class="discount-text-5">10%</div>
+    <div class="discount-badge-6"></div>
+    <div class="discount-text-6">15%</div>
+    <div class="card-description-6"></div>
+    <div class="card-title-6">Черновые материалы</div>
+    <div class="calc-link-4">Рассчитать со скидкой</div>
+    <div class="arrow-icon-4"></div>
+    <div class="calc-link-5">Рассчитать со скидкой</div>
+    <div class="arrow-icon-5"></div>
+    <div class="calc-link-6">Рассчитать со скидкой</div>
+    <div class="arrow-icon-6"></div>
+    <div class="director-signature">Генеральный директор “Арема”, Беляков Филипп</div>
+    <div class="director-message">Спорная ситуация с сотрудником? Напишите напрямую руководству.<br/>Ответ в день обращения
+  </div>
+    <div class="director-title">Письмо директору</div>
+    <div class="director-btn-bg"></div>
+    <div class="director-btn-text">Написать письмо</div>
+    <img class="director-photo" src="dir.jpg" alt="director">
+    <div class="achievements-bg"></div>
+    <div class="achievements-title">Наши достижения</div>
+    <div class="achievement-1"><span class="accent">Лучший клиентский сервис</span> Houzz 2019 по направлению дизайн интерьера</div>
+    <div class="achievement-2"><span class="accent">Лучшая строительная компания России</span> по Версии Биржи Профессионалов Петровича</div>
+    <div class="achievement-3"><span class="accent">ТОП-10</span> строительных компаний Москвы <br/>по версии Yell</div>
+    <img class="achievement-icon-1" src="nag.jpg" alt="award">
+    <img class="achievement-icon-2" src="nag.jpg" alt="award">
+    <img class="achievement-icon-3" src="nag.jpg" alt="award">
+    <div class="reviews-border-1"></div>
+    <div class="reviews-title">Отзывы о нашей работе</div>
+    <div class="reviews-subtitle">Что говорят клиенты</div>
+    <div class="reviews-arrow-left"></div>
+    <div class="reviews-arrow-left-inner"></div>
+    <div class="reviews-arrow-right"></div>
+    <div class="reviews-arrow-right-inner"></div>
+    <div class="reviews-dot-active"></div>
+    <div class="reviews-dot-1"></div>
+    <div class="reviews-dot-2"></div>
+    <div class="reviews-dot-3"></div>
+    <div class="reviews-dot-4"></div>
+    <div class="reviews-dot-5"></div>
+    <div class="reviews-dot-6"></div>
+    <div class="review-author">Очаровательная Ольга Владимировна</div>
+    <div class="review-img-bg"></div>
+    <img class="review-img" src="trij.jpg" alt="review">
+    <div class="review-play-icon"></div>
+    <div class="promo-border-1"></div>
+    <div class="promo-title-1"><span class="accent-blue">Акция</span> “Честно об “Ареме””</div>
+    <div class="promo-btn-1"></div>
+    <div class="promo-btn-text-1">Принять участие</div>
+    <div class="promo-desc-1">Оставьте честный отзыв о работе <br/>нашей компании и получите <span class="blue-link">скидку 5%</span> <br/>О своем желании поучавствовать в акции <br/>“Честно об “Ареме””необходимо сообщить инженеру-сметчику до заключения договора</div>
+    <div class="promo-border-2"></div>
+    <div class="promo-title-2"><span class="accent-blue">Акция</span> “Расскажи другу”</div>
+    <div class="promo-desc-2">Предложите другу заказать <br/>ремонт в компании “Арема” и получите <span class="blue-link">5000 рублей</span>, а друг получит <span class="blue-link">скидку 5%</span></div>
+    <div class="promo-border-3"></div>
+    <div class="promo-title-3"><span class="accent-blue">Акция</span> “Вот это ремонт!”      </div>
+    <div class="promo-desc-3">Пригласи нас сделать фотосессию <br/>своей квартиры после ремонта <br/>и получите <span class="blue-link">2000 рублей</span></div>
+    <div class="white-bg-extra"></div>
+    <img class="overlay-img-1" src="iistroi.jpg" alt="overlay">
+    <img class="overlay-img-2" src="vidsverh.jpg" alt="overlay">
+    <img class="overlay-img-3" src="parkovka.jpg" alt="overlay">
+    <img class="overlay-img-4" src="krani" alt="overlay">
+    <img class="overlay-img-5" src="lydi.jpg" alt="overlay">
+    <img class="overlay-img-6" src="lesa.jpg" alt="overlay">
+    <img class="overlay-img-7" src="stroi.jpg" alt="overlay">
+    <div class="installment-overlay"></div>
+    <div class="installment-item-1">Закажите ремонт, даже если не хотите платить сразу. Ваши проценты берем на себя</div>
+    <div class="installment-title-1">Рассрочка без переплат</div>
+    <div class="future-title">Будущий заголовок</div>
+    <div class="installment-item-2">Смета вырастет только в случае, <br/>если вы сами измените набор работ</div>
+    <div class="installment-title-2">Смета без скрытых работ</div>
+    <div class="installment-item-3">С нами до 30% выгоднее покупать <br/>черновые и чистовые материалы, сантехнику, электрику, двери и окна</div>
+    <div class="installment-title-3">Материал по оптовым ценам</div><!-- Иконка 1: Рассрочка без переплат -->
+<img style="position: absolute; width: 70px; height: 70px; left: 506px; top: 4860px; object-fit: contain; z-index: 10" src="nagr.jpg" alt="Рассрочка">
+<!-- Иконка 2: Смета без скрытых работ -->
+<img style="position: absolute; width: 70px; height: 70px; left: 925px; top: 4860px; object-fit: contain; z-index: 10" src="" alt="Смета">
+<!-- Иконка 3: Материал по оптовым ценам -->
+<img style="position: absolute; width: 81.45px; height: 70px; left: 1340px; top: 4860px; object-fit: contain; z-index: 10" src="rab.jpg" alt="Материалы">
+    <div class="real-cost-title">Как узнать реальную <br/>стоимость вашего ремонта?</div>
+    <div class="real-cost-desc">В этом блоке почти все фирмы размещают прайс-листы <br/>и калькуляторы цен. Мы не будем этого делать, <br/>потому что это обман.</div>
+    <div class="real-cost-note">Узнать, в какую сумму можно уложиться в вашем случае</div>
+    <div class="cost-label-phone">Контактный телефон</div>
+    <div class="cost-input-phone"></div>
+    <div class="cost-placeholder-phone">+7 (___) ___ - __ - __</div>
+    <div class="cost-label-name">Ваше имя</div>
+    <div class="cost-input-name"></div>
+    <div class="cost-placeholder-name">Имя</div>
+    <div class="cost-btn-bg"></div>
+    <div class="cost-btn-text">Заказать консультацию</div>
+    <div class="cost-agreement">Согласен с <span class="policy-link">политикой конфиденциальности</span></div>
+    <div class="cost-checkbox"></div>
+    <div class="cost-checkmark"></div>
+    <div class="explain-text-1"><span class="bold-blue">Во-первых,</span> клиент никогда не посчитает стоимость ремонта самостоятельно просто потому, что он не специалист, и многие его решения ошибочные. <br/></div>
+    <div class="explain-title-1">Поясняем</div>
+    <div class="explain-text-2"><span class="bold-blue">Этап 1.</span> Рассчитать ценовой диапазон, в который можно уложится. В ходе телефонного разговор можно назвать нижнюю и верхнюю границу цен. Это позволит вам решить, приглашать нас для просчета точной суммы.</div>
+    <div class="explain-title-2">Что предлагаем мы</div>
+    <div class="explain-text-3"><span class="bold-blue">Во-вторых,</span> любые цены сказанные до выезда на объекти разработки, — это цены <br/>“с потолка”. Их цель — заманить на встречу клиента.</div>
+    <div class="explain-text-4"><span class="bold-blue">Этап 2.</span> После личной встречи на объекте подготовить точную смету. Это позволит вам решить, работать ли с нашей компанией.</div>
+    <div class="divider-line"></div>
+    <div class="about-bg-main"></div>
+    <img class="about-bg-img-2" src="stroi.jpg" alt="bg">
+    <div class="about-overlay"></div>
+    <div class="about-border"></div>
+    <div class="about-block-1"></div>
+    <div class="about-block-1-title">Приоритеты компании</div>
+    <div class="about-number-1">03</div>
+    <div class="about-block-1-text">Мы хотим своим примером доказать, что грамотная кадровая политика, настоящий менеджмент и автоматизированная система управления позволяют выполнить ремонт точно в соответствии с договоренностями по срокам и качеству.</div>
+    <div class="about-block-1-sub">— зачем мы существуем</div>
+    <div class="about-block-2"></div>
+    <div class="about-block-2-title">Ценности персонала</div>
+    <div class="about-number-2">02</div>
+    <div class="about-block-2-text">Мы хотим своим примером доказать, что грамотная кадровая политика, настоящий менеджмент и автоматизированная система управления позволяют выполнить ремонт точно в соответствии с договоренностями по срокам и качеству.</div>
+    <div class="about-block-2-sub">— зачем мы существуем</div>
+    <div class="about-block-3"></div>
+    <div class="about-block-3-title">Миссия компании</div>
+    <div class="about-number-3">01</div>
+    <div class="about-block-3-text">Мы хотим своим примером доказать, что грамотная кадровая политика, настоящий менеджмент и автоматизированная система управления позволяют выполнить ремонт точно в соответствии с договоренностями по срокам и качеству.</div>
+    <div class="about-block-3-sub">— зачем мы существуем</div>
+    <img class="about-ceo-img" src="lydi.jpg" alt="ceo">
+    <div class="about-main-title">О нас</div>
+    <div class="team-title">На время работы наша команда станет вашей</div>
+    <div class="engineer-exp">Стаж: 6 лет</div>
+    <div class="engineer-achievements">Достижения: Сократил срок проведения ремонта на своем участке на 20%</div>
+    <div class="engineer-awards">Награды: Лучший инженер-сметчик 2019 года по версии “Компания”</div>
+    <div class="engineer-bio">Посчитал более 500 смет и заключил около 200 договоров. Имеет высшее инженерное образование в институте МГСУ. В работе добросовестный <br/>и внимательный. <br/><br/>До этого 3 года работал прорабом. Следит за современными тенденциями <br/>и технологиями в ремонте и дизайне квартир. Подскажет на чем сэкономить <br/>и составит точную смету.</div>
+    <div class="engineer-name">Сергей Буйняков </div>
+    <div class="engineer-role">Лучший инженер-сметчик</div>
+    <div class="team-circle-1"></div>
+    <div class="team-circle-img-1"></div>
+    <img class="team-photo-1" src="krani.jpg" alt="team">
+    <div class="team-circle-2"></div>
+    <div class="team-circle-img-2"></div>
+    <img class="team-photo-2" src="lydi.jpg" alt="team">
+    <div class="team-circle-3"></div>
+    <div class="team-circle-img-3"></div>
+    <img class="team-photo-3" src="iistroi.jpg" alt="team">
+    <div class="team-arrow-left"></div>
+    <div class="team-arrow-left-inner"></div>
+    <div class="team-arrow-right"></div>
+    <div class="team-arrow-right-inner"></div>
+    <div class="team-dot-active"></div>
+    <div class="team-dot-1"></div>
+    <div class="team-dot-2"></div>
+    <div class="team-dot-3"></div>
+    <div class="team-dot-4"></div>
+    <div class="team-dot-5"></div>
+    <div class="team-dot-6"></div>
+    <img class="main-apartment-img" src="stethem.jpg" alt="apartment">
+    <div class="work-scheme-bg"></div>
+    <img class="scheme-bg-img" src="parkovka.jpg" alt="bg">
+    <div class="work-scheme-overlay"></div>
+    <div class="scheme-card"></div>
+    <div class="scheme-card-corner"></div>
+    <div class="scheme-divider"></div>
+    <div class="scheme-desc">В первую очередь клиент должен увидеть несколько вариантов нашего предложения, а также их стоимость и время реализации. Для этого мы выезжаем на объект, выслушиваем ваши пожелания, озвучиваем свои предложения и по итогу готовим ком. предложение.</div>
+    <img class="scheme-arrow-img" src="rieltor.jpg" alt="arrow">
+    <div class="scheme-steps">
+  <span>Шаг 1</span>
+  <span class="step-active">Шаг 2</span>
+  <span>Шаг 3</span>
+  <span class="step-active">Шаг 4</span>
+  <span>Шаг 5</span>
+  <span class="step-active">Шаг 6</span>
+</div>
+    <div class="scheme-question">Отвечаем на ваш вопрос: <br/>Как быстро и за какую сумму мы сделаем ремонт?</div>
+    <div class="scheme-title">Схема работы, которая позволяет нам</div>
+    <div class="scheme-link">Заполнить заявку</div>
+    <div class="scheme-link-icon"></div>
+    <div class="scheme-badge"></div>
+    <div class="scheme-subtitle">выдерживать сроки и обеспечивать качество</div>
+    <div class="objects-title">Уже 810 сданных объектов</div>
+    <div class="objects-subtitle">Готовы предоставить отзыв от каждого клиента</div>
+    <div class="project-card-1"></div>
+    <img class="project-img-1" src="dom.jpg" alt="project">
+    <div class="project-card-2"></div>
+    <img class="project-img-3" src="dom3.jpg" alt="project">
+    <div class="project-btn-1"></div>
+    <div class="project-btn-text-1">Посмотреть проект</div>
+    <div class="project-title-1">Ремонт 1 комнатной квартиры — 38 м²</div>
+    <div class="show-more-btn"></div>
+    <div class="show-more-text">Показать еще</div>
+    <div class="project-card-3"></div>
+    <img class="project-img-4" src="dom4.jpg" alt="project">
+    <div class="project-address-1">Москва, Проспект Андропова, 42к1</div>
+    <div class="project-price-1">416 000 руб.</div>
+    <div class="project-btn-2"></div>
+    <div class="project-btn-text-2">Посмотреть проект</div>
+    <div class="project-title-2">Ремонт 1 комнатной квартиры — 56 м²</div>
+    <div class="project-card-4"></div>
+    <img class="project-img-5" src="https://placehold.co/411x273" alt="project">
+    <img class="project-img-6" src="dom2.jpg" alt="project">
+    <div class="project-address-2">Москва, ул. Новогиреевская, д. 51, к. 1</div>
+    <div class="project-price-2">350 800 руб.</div>
+    <div class="rules-title">Правила создания хорошего ремонта </div>
+    <div class="rule-block-1-bg"></div>
+    <div class="rule-brand-1">AREMA</div>
+    <div class="rule-tag-1">ПЕРСОНАЛ</div>
+    <div class="rule-card-1"></div>
+    <div class="rule-text-1">Инженер, прикрепленный к вашему <br/>объекту проходит в нашу команду только при условии реализации минимум 200 объектов в роли прораба. <br/>Минимальный стаж мастеров - 7 лет.</div>
+    <div class="rule-number-1">03</div>
+    <div class="rule-header-1-bg"></div>
+    <div class="rule-header-1-text">Сотрудники отбираются <br/>1 раз и надолго</div>
+    <img class="rule-img-1" src="rab.jpg" alt="rule">
+    <div class="rule-block-2-bg"></div>
+    <div class="rule-brand-2">AREMA</div>
+    <div class="rule-tag-2">КАЧЕСТВО</div>
+    <div class="rule-card-2"></div>
+    <div class="rule-text-2">Инженер от 2 раз в неделю проводит оценку качества работ мастеров.
+      <br/>Технический надзор проверяет качество работ на объектах за инженером.
+      <br/>Служба контроля качества связывается с Вами лично и передает информацию руководству.</div>
+    <div class="rule-number-2">02</div>
+    <div class="rule-header-2-bg"></div>
+    <div class="rule-header-2-text">Качество будет проверено трижды</div>
+    <img class="rule-img-2" src="stroitel.jpg" alt="rule">
+    <div class="rule-block-3-bg"></div>
+    <div class="rule-brand-3">AREMA</div>
+    <div class="rule-tag-3">КОНТРОЛЬ</div>
+    <div class="rule-card-3"></div>
+    <div class="rule-text-3">Мы не берем предоплату за работы. <br/>Вы расплачиваетесь поэтапно, только после личной проверки работ на объектах. <br/>Это помогает нам повышать качество работ на каждом этапе.</div>
+    <div class="rule-number-3">01</div>
+    <div class="rule-header-3-bg"></div>
+    <div class="rule-header-3-text">Сначала проверка - потом оплата<br/>и никак иначе</div>
+    <img class="rule-img-3" src="stethem.jpg" alt="rule">
+    <div class="result-section-bg"></div>
+    <div class="result-item-1">Выполняем шумные работы только <br/>с 9:00 до 13:00 и с 15:00 до 19:00. <br/>Вы застрахованы от жалоб соседей и проблем с контролирующими органами.</div>
+    <div class="result-title-1">Не нарушаем закон тишины</div>
+    <div class="result-main-title">Главное результат</div>
+    <div class="result-item-2">Даем полное постгарантийное <br/>обслуживание на 3 года вперед.</div>
+    <div class="result-title-2">Гарантия 36 месяцев</div>
+    <div class="result-item-3">Мы с Вами от демонтажа до уборки. <br/>Любые чистовые и черновые материалы. Монтаж окон и дверей, в общем все, чтобы ремонт прошел максимально комфортно.</div>
+    <div class="result-title-3">Реальный ремонт под ключ</div>
+    <div class="result-subtitle">Предлагаем оценивать его, а не старания</div>
+<img class="install-photo-1" src="mute.png" alt="Рассрочка">
+<img class="install-photo-2" src="shield.png" alt="Смета">
+<img class="install-photo-3" src="key.png" alt="Материалы" style="position: absolute; width: 81.45px; height: 70px; left: 1340px; top: 3580px; object-fit: contain; z-index: 10;" />
+    <div class="hero-bg"></div>
+    <img class="hero-img-1" src="https://placehold.co/1920x1080" alt="hero">
+    <img class="hero-img-2" src="log.jpg" alt="hero">
+    <img class="hero-img-3" src="fonovoe.jpg" alt="hero">
+    <img class="hero-img-4" src="fonovoe.jpg" alt="hero">
+    <div class="hero-overlay-1"></div>
+    <div class="hero-overlay-2"></div>
+    <div class="hero-overlay-3"></div>
+    <div class="hero-watermark">arema</div>
+    <div class="hero-shadow"></div>
+    <div class="hero-main-text"><span class="yellow">Хороший ремонт</span> <span class="white-normal">с гарантией</span></div>
+    <div class="hero-sub-text">Финансовая ответсТвенность<br/>за качество и сроки</div>
+    <div class="hero-blur"></div>
+    <img class="hero-logo" src="Arema.png" alt="logo">
+ <div class="nav-links" style="display: flex; gap: 40px; align-items: center;">
+<div class="nav-links" style="display: flex; flex-direction: row; gap: 40px; align-items: center; white-space: nowrap; position: absolute; left: 200px; top: 17px;">
+  <span id="menuLink" style="cursor: pointer; color: white; font-size: 16px; font-family: Formular; font-weight: 500;">Ремонт квартир</span>
+  <a href="price.html" style="color: white; text-decoration: none; font-size: 16px; font-family: Formular; font-weight: 500;">Ремонт ванн</a>
+  <a href="design.html" style="color: white; text-decoration: none; font-size: 16px; font-family: Formular; font-weight: 500;">Дизайн интерьеров</a>
+  <a href="blog.html" style="color: white; text-decoration: none; font-size: 16px; font-family: Formular; font-weight: 500;">Блог</a>
+</div>
+    <div class="hero-award-text">Лучшая строительная компания России <br/>по Версии Биржи Профессионалов Петровича</div>
+    <img class="hero-partner-icon" src="nagrada.jpg" alt="partner">
+    <div class="hero-partner-text">Партнер Тинькофф Банка</div>
+    <img class="hero-bank-img-1" src="tinkoff.jpg" alt="bank">
+    <img class="hero-bank-img-2" src="tinkof.jpg" alt="bank">
+    <div class="callback-link">Заказать звонок</div>
+    <div class="callback-icon"></div>
+    <div class="hero-phone">+7 (499) 450 77 86</div>
+    <div class="hero-estimate-btn"></div>
+    <div class="hero-estimate-text">Заказать оценку</div>
+    <div class="hero-features-blur"></div>
+    <div class="hero-feature-1">В команде только специалисты</div>
+    <div class="hero-feature-2">Оплата за результат</div>
+    <div class="hero-feature-3">Гарантия 36 месяцев</div>
+    <div class="hero-badge-1"></div>
+    <div class="hero-badge-inner-1"></div>
+    <div class="hero-badge-2"></div>
+    <div class="hero-badge-inner-2"></div>
+    <div class="hero-badge-3"></div>
+    <div class="hero-badge-inner-3"></div>
+    <div class="hero-divider-1"></div>
+    <div class="hero-divider-2"></div>
+    <div class="hero-accent-line"></div>
+    <div class="hero-accent-dot"></div>
+    <div class="hero-vertical-line"></div>
+    <div class="scroll-label">scroll</div>
+  </div>
+
+<!-- Бургер-меню (изначально скрыто) -->
+<div id="burgerMenu" style="display: none;">
+  <div style="width: 734px; height: 1080px; position: fixed; top: 0; right: 0; z-index: 1000;">
+    <div style="width: 418px; height: 1080px; left: 316px; top: 0px; position: absolute; background: rgba(23, 23, 23, 0.80)"></div>
+    <div style="width: 258px; height: 603px; left: 402px; top: 74px; position: absolute; justify-content: center; display: flex; flex-direction: column">
+      <span style="color: white; font-size: 20px; font-family: Formular; font-weight: 500; line-height: 56px; word-wrap: break-word">
+        Правила ремонта      <br/>
+        Портфолио       <br/>
+        Схема работы       <br/>
+        Команда       <br/>
+        О нас<br/>
+      <a href="price.html" style="color: #FCCA3A; font-size: 20px; font-family: Formular; font-weight: 500; line-height: 56px; word-wrap: break-word; text-decoration: none;">
+  Стоимость работы 
+</a>
+      <span style="color: white; font-size: 20px; font-family: Formular; font-weight: 500; line-height: 56px; word-wrap: break-word">
+        <br/>Отзывы клиентов<br/>Наши достижения<br/>Скидки на материалы<br/>Ответы на вопросы      <br/>Контакты 
+      </span>
+    </div>
+    <div style="width: 20px; height: 20px; left: 350px; top: 37px; position: absolute; cursor: pointer;" id="closeMenuBtn">
+      <div style="width: 20px; height: 2px; left: 0px; top: 9px; position: absolute; background: white; transform: rotate(45deg);"></div>
+      <div style="width: 20px; height: 2px; left: 0px; top: 9px; position: absolute; background: white; transform: rotate(-45deg);"></div>
+    </div>
+  </div>
+</div>
+<script>
+  // Функция открытия меню
+  function openMenu() {
+    const menu = document.getElementById('burgerMenu');
+    menu.style.display = 'block';
+    document.body.style.overflow = 'hidden'; // запрещаем скролл фона
+    
+    // Создаём оверлей если его нет
+    if (!document.querySelector('.menu-overlay')) {
+      const overlay = document.createElement('div');
+      overlay.className = 'menu-overlay';
+      overlay.onclick = closeMenu;
+      document.body.appendChild(overlay);
+      setTimeout(() => overlay.classList.add('show'), 10);
+    } else {
+      document.querySelector('.menu-overlay').classList.add('show');
+    }
+  }
+
+  // Функция закрытия меню
+  function closeMenu() {
+    const menu = document.getElementById('burgerMenu');
+    menu.style.display = 'none';
+    document.body.style.overflow = 'auto';
+    const overlay = document.querySelector('.menu-overlay');
+    if (overlay) {
+      overlay.classList.remove('show');
+    }
+  }
+
+ // Навешиваем обработчик на ссылку "Ремонт квартир" (она теперь открывает меню)
+document.addEventListener('DOMContentLoaded', function() {
+  // Находим элемент "Ремонт квартир" по ID
+  const menuLink = document.getElementById('menuLink');
+  
+  if (menuLink) {
+    menuLink.style.cursor = 'pointer';
+    menuLink.onclick = function(e) {
+      e.preventDefault();
+      openMenu();  // открывает бургер-менюss
+    };
+  }
+  
+  // Закрытие по крестику
+  const closeBtn = document.getElementById('closeMenuBtn');
+  if (closeBtn) {
+    closeBtn.onclick = closeMenu;
+  }
+  
+  // Закрытие по Escape
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') {
+      closeMenu();
+    }
+  });
+});
+</script>
+</body>
+</html>
